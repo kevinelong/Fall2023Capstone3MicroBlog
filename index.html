@@ -1,0 +1,33 @@
+<body>
+    <fieldset>
+        <legend>Register:</legend>
+        <label>
+            Username:
+            <input type="text" id="username" name="username">
+        </label><br><br>
+        <label>
+            Full Name:
+            <input type="text" id="fullName" name="fullName">
+        </label><br><br>
+        <label>
+            Password:
+            <input type="password" id="password" name="password">
+        </label><br><br>
+        <input type="submit" value="Register"
+            onclick="register({username:username.value,fullName:fullName.value,password:password.value})">
+    </fieldset>
+
+    <fieldset>
+        <legend>Login:</legend>
+        <label>
+            Username:
+            <input type="text" id="username2" name="username">
+        </label><br><br>
+        <label>
+            Password:
+            <input type="password" id="password2" name="password">
+        </label><br><br>
+        <input type="submit" value="Login" onclick="login({username:username2.value,password:password2.value})">
+    </fieldset>
+</body>
+<script src="./index.js"></script>
