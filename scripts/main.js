@@ -69,19 +69,19 @@ let user = {};
 
 const api = new API("http://microbloglite.us-east-2.elasticbeanstalk.com");
 
-async function init() {
+// async function init() {
 
-    user = await api.register({ username: "bob111", fullName: "Bob Dobbs", password: "secret" });
-    token = await api.login({ username: "bob", password: "secret" });
-    console.log(user)
-    console.log(token)
+//     user = await api.register({ username: "bob111", fullName: "Bob Dobbs", password: "secret" });
+//     token = await api.login({ username: "bob", password: "secret" });
+//     console.log(user)
+//     console.log(token)
 
-    let userList = await api.get("/api/users", token);
-    console.log(userList);
+//     let userList = await api.get("/api/users", token);
+//     console.log(userList);
 
-    let messages = await api.get("/api/posts", token);
-    console.log(messages);
+//     let messages = await api.get("/api/posts", token);
+//     console.log(messages);
 
-    api.like(messages[0]._id)
-}
-init();
+//     api.like(messages[0]._id)
+// }
+// init();

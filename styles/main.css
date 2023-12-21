@@ -1,0 +1,11 @@
+body{
+    background-color: ivory;
+    color: darkred;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button,
+input[type=button]{
+    padding: 0.5em 1em;
+    margin: 1em 0.5em;
+}
