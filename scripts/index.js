@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", e => {
             password: password.value 
         });
 
-        window.location = "posts.html"
+        window.location = "/posts/"
     });
 
 });
