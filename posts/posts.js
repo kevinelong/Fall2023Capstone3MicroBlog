@@ -29,7 +29,7 @@ async function showMessages(username = "") {
     let url = "/api/posts"
     messages = await api.get(url, localStorage.token);
     if (username != "") {
-        messages = messages.filter(m=>m.username = username)
+        messages = messages.filter(m=>m.username == username)
     }
     results.innerHTML = messages.map(getMessageHTML).join("")
 }
